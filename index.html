@@ -6,10 +6,114 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Emmzy Haircutz - Stylish Unisex Salon</title>
   <link rel="stylesheet" href="style.css" />
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="images/templatemo-barber-logo.png" type="image/x-icon" />
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet" />
 </head>
 <body>
-<!-- (rest of the HTML content as you shared) -->
+
+  <nav class="navbar">
+    <div class="logo">Emmzy Haircutz</div>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#our-story">Our Story</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#prices">Price List</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home" class="hero">
+    <h1>Barber <span>Shop</span></h1>
+    <p>Get the most professional haircut for you</p>
+    <img src="images/bg-hero-desktop.svg" alt="Hero Background">
+  </section>
+
+  <section id="our-story" class="about">
+    <h2>About Us & What We Do</h2>
+    <h3>Hurry Up! Get a good haircut.</h3>
+    <p>
+      Welcome to Emmzy Haircutz, your stylish unisex salon offering exceptional hair services for everyone.
+      Led by CEO <strong>Alaba Emmanuel Adekunle</strong>, matric no <em>21/66MC092</em>, an undergraduate of the prestigious University of Ilorin, Tanke Okeodo.
+    </p>
+    <img src="images/ceo.jpg" alt="CEO portrait" />
+  </section>
+
+  <section id="services" class="services">
+    <h2>Best Hairdressers</h2>
+    <p>
+      Elevate your style with our skilled stylists, offering the latest trends and timeless cuts for everyone.
+      Your hair is a reflection of your individuality, and we tailor our services to enhance your confidence.
+    </p>
+    <ul>
+      <li>Classic and Modern Haircuts</li>
+      <li>Beard Trimming and Styling</li>
+      <li>Hair Coloring and Highlights</li>
+      <li>Kids Haircuts</li>
+      <li>Shampoo and Scalp Treatments</li>
+      <li>Special Event Styling</li>
+    </ul>
+    <img src="images/barber-customer-giving-high-five.jpg" alt="Barber Tools" />
+  </section>
+
+  <section id="prices" class="price-list">
+    <h2>Price List</h2>
+    <p><strong>Starting at ₦15,000</strong></p>
+    <div class="prices">
+      <div class="price-item">
+        <h4>Haircut</h4>
+        <p>₦15,000</p>
+      </div>
+      <div class="price-item">
+        <h4>Beard Trim</h4>
+        <p>₦10,000</p>
+      </div>
+      <div class="price-item">
+        <h4>Razor Cut</h4>
+        <p>₦18,000</p>
+      </div>
+      <div class="price-item">
+        <h4>Shaves</h4>
+        <p>₦12,000</p>
+      </div>
+      <div class="price-item">
+        <h4>Styling / Color</h4>
+        <p>₦20,000</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Say Hello</h2>
+    <p>Contact Information</p>
+    <p><strong>Phone:</strong> +2349065001300</p>
+    <p><strong>Email:</strong> <a href="mailto:alabaemmanuel40@gmail.com">alabaemmanuel40@gmail.com</a></p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/Emmzyung" target="_blank">@Emmzyung</a></p>
+    <p><strong>TikTok:</strong> <a href="https://www.tiktok.com/@emmzy_01" target="_blank">@emmzy_01</a></p>
+    <p><strong>X (Twitter):</strong> <a href="https://x.com/alabaemmanuel13" target="_blank">@alabaemmanuel13</a></p>
+
+    <h3>Book a Seat</h3>
+    <form>
+      <label for="branch">Select Branch:</label>
+      <select id="branch" name="branch" required>
+        <option value="" disabled selected>Select Branch</option>
+        <option value="tanke">Tanke</option>
+        <option value="okeodo">Okeodo</option>
+        <option value="ilorin">Ilorin</option>
+      </select>
+
+      <label for="name">Your Name:</label>
+      <input type="text" id="name" name="name" placeholder="Your full name" required />
+
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" placeholder="+234..." required />
+
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Emmzy Haircutz. All rights reserved.</p>
+  </footer>
+
 </body>
 </html>
