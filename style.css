@@ -1,2 +1,274 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(135deg, #004080, #ffffff, #cc0000);
+  color: #111;
+  line-height: 1.6;
+  padding: 20px;
+}
 
-/* (The CSS content you provided) */
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #00264d;
+  padding: 15px 30px;
+  border-radius: 12px;
+  color: white;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #cc0000;
+}
+
+/* Sections common */
+section {
+  background: white;
+  margin: 40px auto;
+  padding: 40px;
+  max-width: 900px;
+  border-radius: 20px;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+  text-align: center;
+}
+
+/* Hero */
+.hero {
+  background: #00264d;
+  color: white;
+  padding: 100px 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  background-image: url('images/bg-hero-desktop.svg');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 900;
+}
+
+.hero h1 span {
+  color: #cc0000;
+}
+
+.hero p {
+  font-size: 1.6rem;
+  margin-top: 10px;
+  font-weight: 300;
+}
+
+/* About */
+.about h2, .services h2, .price-list h2, .contact h2 {
+  font-size: 2.8rem;
+  color: #cc0000;
+  margin-bottom: 25px;
+  font-weight: 700;
+}
+
+.about h3 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+  color: #004080;
+}
+
+.about p {
+  font-size: 1.1rem;
+  color: #004080;
+  margin-bottom: 20px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.about img {
+  width: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* Services */
+.services p {
+  max-width: 700px;
+  margin: 0 auto 30px;
+  font-weight: 400;
+  color: #004080;
+}
+
+.services ul {
+  list-style-type: square;
+  max-width: 500px;
+  margin: 0 auto 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  color: #004080;
+  text-align: left;
+}
+
+.services ul li {
+  margin-bottom: 12px;
+}
+
+.services img {
+  max-width: 90%;
+  border-radius: 20px;
+  box-shadow: 0 8px 15px rgba(0,0,0,0.25);
+}
+
+/* Price List */
+.price-list p {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #004080;
+  margin-bottom: 30px;
+}
+
+.prices {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.price-item {
+  background: #004080;
+  color: white;
+  border-radius: 15px;
+  padding: 25px 35px;
+  min-width: 160px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.price-item h4 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+}
+
+.price-item p {
+  font-size: 1.4rem;
+  font-weight: 700;
+}
+
+/* Contact */
+.contact p {
+  font-weight: 600;
+  color: #004080;
+  margin: 8px 0;
+}
+
+.contact a {
+  color: #cc0000;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.contact a:hover {
+  text-decoration: underline;
+}
+
+.contact form {
+  margin-top: 30px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+.contact label {
+  display: block;
+  margin: 15px 0 6px;
+  font-weight: 700;
+  color: #004080;
+}
+
+.contact input,
+.contact select {
+  width: 100%;
+  padding: 10px 15px;
+  border: 2px solid #004080;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.contact input:focus,
+.contact select:focus {
+  border-color: #cc0000;
+}
+
+.contact button {
+  margin-top: 25px;
+  background: #cc0000;
+  color: white;
+  border: none;
+  padding: 15px 25px;
+  font-size: 1.2rem;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+  transition: background-color 0.3s;
+}
+
+.contact button:hover {
+  background: #9a0000;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 30px 10px;
+  background: #00264d;
+  color: white;
+  font-weight: 600;
+  font-size: 1rem;
+  border-radius: 12px;
+  margin-top: 60px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .nav-links {
+    gap: 15px;
+  }
+  .prices {
+    flex-direction: column;
+    align-items: center;
+  }
+}
